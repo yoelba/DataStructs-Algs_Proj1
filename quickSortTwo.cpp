@@ -64,8 +64,8 @@ template <class T>
 void quicksort(T a[], int start, int stop)
 {
 	if (stop - start > 1) {
-//		int pivot = start + rand() % (stop - start);
-		int pivot = start;
+		int pivot = start + rand() % (stop - start);
+//		int pivot = start;
 		
 		partition(a, start, stop, pivot);
 		quicksort(a, start, pivot);
